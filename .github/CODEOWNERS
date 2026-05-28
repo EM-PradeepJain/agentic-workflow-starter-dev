@@ -1,0 +1,71 @@
+# CODEOWNERS — personal repo
+# Syntax: <pattern>  <owner>
+
+# ─────────────────────────────────────────────
+# Default owner for everything (catch-all)
+# ─────────────────────────────────────────────
+*                                @EM-PradeepJain
+
+# ─────────────────────────────────────────────
+# Workflow + governance
+# ─────────────────────────────────────────────
+/.github/                        @EM-PradeepJain
+/.github/CODEOWNERS              @EM-PradeepJain
+/.github/workflows/              @EM-PradeepJain
+/CLAUDE.md                       @EM-PradeepJain
+
+# ─────────────────────────────────────────────
+# Backend (Fastify / Prisma / Postgres)
+# ─────────────────────────────────────────────
+/apps/api/                       @EM-PradeepJain
+/apps/api/src/modules/auth/      @EM-PradeepJain
+/apps/api/prisma/                @EM-PradeepJain
+
+# ─────────────────────────────────────────────
+# Frontend (React / TanStack)
+# ─────────────────────────────────────────────
+/apps/web/                       @EM-PradeepJain
+
+# ─────────────────────────────────────────────
+# Shared packages — change with care, breaks consumers
+# ─────────────────────────────────────────────
+/packages/types/                 @EM-PradeepJain
+/packages/validation/            @EM-PradeepJain
+/packages/config/                @EM-PradeepJain
+
+# ─────────────────────────────────────────────
+# Infra / DevOps
+# ─────────────────────────────────────────────
+/docker-compose*.yml             @EM-PradeepJain
+/turbo.json                      @EM-PradeepJain
+/pnpm-workspace.yaml             @EM-PradeepJain
+/.dockerignore                   @EM-PradeepJain
+
+# ─────────────────────────────────────────────
+# Compliance-sensitive paths
+# ─────────────────────────────────────────────
+/apps/api/src/modules/compliance/    @EM-PradeepJain
+/apps/api/src/modules/messaging/     @EM-PradeepJain
+/apps/api/src/lib/encryption*        @EM-PradeepJain
+
+# ─────────────────────────────────────────────
+# Test plans, manual test artifacts, test infrastructure
+# ─────────────────────────────────────────────
+/.github/ISSUE_TEMPLATE/pqe-test-plan.yml   @EM-PradeepJain
+/tests/manual/                              @EM-PradeepJain
+/playwright/                                @EM-PradeepJain
+/e2e/                                       @EM-PradeepJain
+
+# ─────────────────────────────────────────────
+# Testing strategy taxonomy (TESTING.md model) — per-layer ownership.
+# ─────────────────────────────────────────────
+/TESTING.md                                 @EM-PradeepJain
+/tests/README.md                            @EM-PradeepJain
+/tests/contract/                            @EM-PradeepJain
+/tests/e2e/flows/                           @EM-PradeepJain
+/tests/e2e/regression/                      @EM-PradeepJain
+/tests/e2e/smoke/                           @EM-PradeepJain
+/tests/e2e/chaos/                           @EM-PradeepJain
+/tests/perf/                                @EM-PradeepJain
+/tests/security/                            @EM-PradeepJain
+/tests/a11y/                                @EM-PradeepJain
